@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.App {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  position: relative;
+}
+
+.App:before {
+  content: '';
+  background-image: url('https://wallpaperaccess.com/full/5466337.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 70%;
+  height: 70%;
+  margin: auto;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.search-input {
+  height: 40px;
+  width: 70%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding-left: 16px;
+  outline: none;
+  color: #ffffff;
+
+}
+
+.search-input:focus {
+  box-shadow: 0 0px 4px 3px rgb(245, 182, 11);
+  border: 0;
+  background-color: #ffffff;
+  color: black;
+}
+
+.bottom-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 60px;
+  border-radius: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wind-container {
+  text-align: center;
+}
+
+.humidity-container {
+  text-align: center;
+}
+
+
+.feels-like-container {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.location {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.temparature {
+  font-family: 'Roboto';
+  font-size: 46px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.description {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.failure-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-msg {
+  color: rgb(255, 255, 255);
+}
+
+.error-img {
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .bottom-container {
+    height: 120px;
+  }
+
+  .error-msg {
+    font-size: 20px;
+  }
+
+  .location {
+    font-size: 32px;
+  }
+
+  .temparature {
+    font-size: 60px;
+  }
+
+  .description {
+    font-size: 30px;
+  }
+
+  .bold {
+    font-size: 34px;
+  }
+
+  .normal {
+    font-size: 20px;
+  }
+
+  .search-container {
+    padding-top: 60px;
+  }
+
+  .search-input {
+    width: 540px;
+  }
+}
